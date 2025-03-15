@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life - Waziristan Culture</title>
+    <style>
+        /* General Body Styling */
+        body {
+            background-color: #ffffff;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 20px;
+            font-size: 2.5em;
+            animation: fadeIn 2s;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2ecc71;
+        }
+
+        /* Video Gallery Section */
+        .video-gallery {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video-gallery embed {
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .video-gallery embed:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .video-gallery embed {
+                width: 90%;
+                height: auto;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Waziristan Culture</h1>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.htm">Home</a>
+        <a href="events.htm">Events</a>
+        <a href="pic.htm">Pictures</a>
+        <a href="video.htm">Videos</a>
+        <a href="contact.htm">Contact</a>
+    </nav>
+
+    <h2 style="text-align:center; margin-top: 40px;">Video Gallery</h2>
+
+    <!-- Video Gallery Section -->
+    <div class="video-gallery">
+        <embed src="vedio/cc.mp4" type="video/mp4">
+        <embed src="vedio/oo.mp4" type="video/mp4">
+        <embed src="vedio/vv.mp4" type="video/mp4">
+        <embed src="vedio/zz.mp4" type="video/mp4">
+        <embed src="vedio/oo.mp4" type="video/mp4">
+        <embed src="vedio/vv.mp4" type="video/mp4">
+        <embed src="vedio/vv.mp4" type="video/mp4">
+        <embed src="vedio/zz.mp4" type="video/mp4">
+        <embed src="vedio/zz.mp4" type="video/mp4">
+        <embed src="vedio/vv.mp4" type="video/mp4">
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Waziristan Culture. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

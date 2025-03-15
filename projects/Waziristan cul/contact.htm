@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life - Waziristan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center; /* Centered the main title */
+            margin: 20px 0; /* Spacing above and below */
+        }
+
+        .navbar {
+            background-color: #ccc; /* Gray background for the navigation bar */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: #333; /* Dark gray color for text */
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and scaling */
+        }
+
+        .navbar a:hover {
+            background-color: #bbb; /* Darker gray on hover */
+            color: white; /* Change text color on hover */
+            transform: scale(1.1); /* Slightly enlarge the link on hover */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: 700;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s, background-color 0.3s; /* Transition for input focus */
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #888;
+            background-color: #fff;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s; /* Transition for button */
+        }
+
+        .submit-btn:hover {
+            background-color: #333;
+            transform: translateY(-3px); /* Raise the button on hover */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Waziristan</h1>
+    <hr>
+
+    <!-- Navigation Menu -->
+    <div class="navbar">
+        <a href="index.htm">Home</a>
+        <a href="events.htm">Events</a>
+        <a href="pic.htm">Pictures</a>
+        <a href="video.htm">Videos</a>
+        <a href="contact.htm">Contact</a>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Fill out the form below, and we'll get in touch as soon as possible.</p>
+        </header>
+
+        <section class="contact-form">
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="input-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

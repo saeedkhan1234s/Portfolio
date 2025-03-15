@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saeed's Portfolio</title>
+
+    <!-- Boxicons for icons -->
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="/css/myportfolio.css">
+    
+    <style>
+        /* Reset default margin & padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, sans-serif;
+            color: white;
+        }
+
+        /* Body */
+        body {
+            background-color: black;
+            padding-top: 70px; /* Prevent content from hiding behind the header */
+        }
+
+        /* Header Fix */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px; /* Fixed height */
+            padding: 0 30px;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+
+        .logo a {
+            font-size: 28px;
+            color: darkcyan;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Navigation Links */
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .links a {
+            text-decoration: none;
+            font-size: 18px;
+            color: lightgrey;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            color: cyan;
+        }
+
+        /* Toggle Menu Icon */
+        .menu_icon {
+            display: none;
+            font-size: 32px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Responsive Menu */
+        @media (max-width: 800px) {
+            .menu_icon {
+                display: block;
+            }
+
+            .links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                width: 100%;
+                background: rgba(0, 7, 7, 0.9);
+                text-align: center;
+                padding: 10px 0;
+                border-radius: 10px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .links a {
+                display: block;
+                padding: 10px;
+            }
+
+            .links.open {
+                display: flex;
+            }
+        }
+
+        /* Home Section */
+        .section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .home {
+            flex: 1;
+        }
+
+        .home h2 {
+            font-size: 28px;
+        }
+
+        .home h1 {
+            font-size: 40px;
+            color: darkcyan;
+        }
+
+        .btn button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: darkcyan;
+            color: white;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .btn button:hover {
+            background: cyan;
+            transform: scale(1.05);
+        }
+
+        .img img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+            }
+
+            .img img {
+                width: 80%;
+                height: auto;
+                margin-top: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#">Portfolio</a>
+        </div>
+        
+        <div class="links" id="menu">
+            <a href="index.html">Home</a>
+            <a href="my_protfolio_about.html">About</a>
+            <a href="my_portfolio._services.html">Services</a>
+            <a href="my_portfolio_projects.html">Projects</a>
+            <a href="my_portfolio_contact.html">Contact</a>
+        </div>
+        
+        <div class="menu_icon" onclick="toggleMenu()">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="img">
+            <img src="profile pic.jpg" alt="Profile Picture">
+        </div>
+        <div class="home">
+            <h2>Hello, it's me</h2>
+            <h1>Saeed-ur-Rehman</h1>
+            <h2>and I am a <span class="front">Frontend Developer</span></h2>
+            <p>Lifetime Learner</p>
+            
+            <div class="btn">
+                <button>Download CV</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            let menu = document.getElementById('menu');
+            menu.classList.toggle('open');
+        }
+    </script>
+
+</body>
+</html>

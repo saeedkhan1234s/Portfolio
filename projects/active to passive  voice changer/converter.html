@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentence Converter Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sentence Converter Tool</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="grammar-rules.html">Grammar Rules</a>
+        </nav>
+    </header>
+
+    <section>
+        <input type="text" id="sentenceInput" placeholder="Enter your sentence here">
+        <button onclick="convertToPassive()">Convert to Passive</button>
+        <button onclick="convertToActive()">Convert to Active</button>
+        
+        <p id="result"></p>
+        <p id="error"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
